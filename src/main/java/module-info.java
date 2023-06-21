@@ -5,6 +5,8 @@ module com.example.nerdfyv2 {
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.nerdfyv2 to javafx.fxml;
-    exports com.example.nerdfyv2;
+    opens com.unical.nerdfy to javafx.fxml;
+    exports com.unical.nerdfy;
+    exports com.unical.nerdfy.controller;
+    opens com.unical.nerdfy.controller to javafx.fxml;
 }
